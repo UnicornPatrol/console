@@ -1,0 +1,22 @@
+= render partial: 'topmenu'
+
+.container-lg.mt-4
+  %h2 Dashboard
+  .row
+    .col.mt-2
+      .card(style="width: 18rem;")
+        .card-body
+          %h5.card-title Awards
+          %h6.card-subtitle.mb-2.text-muted Badges you've earned
+          %p.card-text.font-weight-light.font-italic
+            You haven't earned any badges yet
+          %a.card-link(href="#") More info
+    .col.mt-2
+      .card(style="width: 28rem;")
+        .card-body
+          %h5.card-title Recent Activity
+          %ul.list-group.list-group-flush
+            %li.list-group-item.small Unicorned Joe
+            %li.list-group-item.small Unicorned Sue
+            %li.list-group-item.small Unicorned Ted
+          %a.card-link(href="#") More activity

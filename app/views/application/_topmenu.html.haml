@@ -1,0 +1,38 @@
+-# Top navigation bar on the whole page
+%nav.navbar.navbar-expand-md.navbar-light.bg-light
+  %a.navbar-brand(href="#") Unicorn Patrol
+
+  -# Toggler allows the whole navbar to collapse down into a single menu when the screen
+  -# width is small.  Things in #navbarSupportedContent below become the menu.
+  %button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                         aria-controls="navbarSupportedContent" aria-expanded="false"
+                         aria-label="Toggle navigation")
+    -# The "hamburger" icon if we are collapsed
+    %span.navbar-toggler-icon
+
+  #navbarSupportedContent.collapse.navbar-collapse
+    -# Left-aligned menu bar items
+    -# .navbar-collapse.collapse.w-100.dual-collapse2.order-1.order-md-0
+    -#   %ul.navbar-nav.mr-auto
+    -#     %li.nav-item
+    -#       %a.nav-link{ href: "#" }
+    -#         Home
+    -#         %span.sr-only (current)
+
+    -# Center-aligned menu bar items
+    -# "ml-auto" adds space to center-align and right-align below
+    %ul.navbar-nav.ml-auto
+      %li.nav-item
+        %a.nav-link(href="#") Unicorn Me!
+
+    -# Right-aligned menu bar items
+    %ul.navbar-nav.ml-auto
+      %li.nav-item.dropdown
+        %a#navbarDropdown.nav-link.dropdown-toggle(href="#" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+          Dropdown
+        .dropdown-menu(aria-labelledby="navbarDropdown")
+          %a.dropdown-item(href='https://github.com/UnicornPatrol/') Help
+          %a.dropdown-item(href="#") Action 2
+          .dropdown-divider
+          %a.dropdown-item(href="#") Logout
