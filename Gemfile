@@ -6,7 +6,7 @@ ruby '2.5.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 gem 'mysql2', '>= 0.4.4'
-gem 'puma', '~> 4.1'        # appserver
+gem 'puma', '~> 4.3'        # appserver
 gem 'sass-rails', '>= 6'    # parses SCSS stylesheets
 gem 'webpacker', '~> 4.0'   # transpiler for Javascript
 gem 'turbolinks', '~> 5'    # Speed up some app navigation
